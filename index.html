@@ -395,7 +395,12 @@
             </li>
           </ul>
         </div>
-      </div>          
+      </div>
+      <form class="footer-form">
+        <p>Подпишитесь на рассылку</p>
+        <input type="text">
+        <button type="submit">Подписаться</button>
+      </form>          
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -433,13 +438,13 @@
               </svg>
             </span>
           </label>
-          <label class="modal-form-field">
+          <label class="modal-form-textarea-field">
             Комментарий
             <textarea class="modal-form-message" name="user-message" placeholder="Введите текст"></textarea>
           </label>
           <input class="modal-form-checkbox visually-hidden" type="checkbox" id="policy">
           <label class="modal-form-checkbox-label" for="policy">Соглашаюсь с рассылкой и принимаю&nbsp;
-          <a href="">Условия договора</a></label>
+          <a class="policy-link" href="">Условия договора</a></label>
           <button class="modal-form-btn" type="submit">
             Отправить
           </button>
