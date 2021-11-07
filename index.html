@@ -395,19 +395,20 @@
             </li>
           </ul>
         </div>
-      </div>
-      <form class="footer-form">
-        <div class="footer-form-block">
+        <form class="footer-form">
           <p class="footer-form-text">Подпишитесь на рассылку</p>
-          <input class="footer-form-input" type="text">
-          <button class="footer-form-button" type="submit">
-            <span class="footer-form-button-text">Подписаться</span>
-          </button>
-          <svg class="form-footer-icon" width="24px" height="24px">
-            <use href="./img/icons.svg#icon-icon-send"></use>
-          </svg>
-        </div>
-      </form>          
+          <div class="footer-form-block">
+            <input class="footer-form-input" type="text" placeholder="E-mail">
+            <button class="footer-form-button" type="submit">
+              <span class="footer-form-button-text">Подписаться</span>
+              <svg class="form-footer-icon" width="24px" height="24px">
+                <use href="./img/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+            
+          </div>
+        </form>
+      </div>                
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -449,7 +450,7 @@
             Комментарий
             <textarea class="modal-form-message" name="user-message" placeholder="Введите текст"></textarea>
           </label>
-          <input class="modal-form-checkbox visually-hidden" type="checkbox" id="policy">
+          <input class="modal-form-checkbox visually-hidden" type="checkbox" id="policy" name="policy">
           <label class="modal-form-checkbox-label" for="policy">Соглашаюсь с рассылкой и принимаю&nbsp;
           <a class="policy-link" href="">Условия договора</a></label>
           <button class="modal-form-btn" type="submit">
