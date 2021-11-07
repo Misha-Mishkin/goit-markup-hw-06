@@ -50,7 +50,7 @@
       <!--Основная информация на странице-->
       <section class="features section">
         <div class="container">
-            <h2 class="feature-title">Особенности</h2>
+            <h2 class="feature-title visually-hidden">Особенности</h2>
             <ul class="feature-list">
               <li class="feature-item">
                 <div class="feature-icons">
@@ -404,6 +404,46 @@
             <use href="./img/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <form action="#" class="modal-form">
+          <p class="modal-form-head">Оставьте свои данные, мы вам перезвоним</p>
+          <label class="modal-form-field">
+            Имя
+            <span class="modal-form-wrapper">
+              <input class="modal-form-input" type="text" name="user-name">
+              <svg class="modal-form-icon" width="18px" height="18px">
+                <use href="./img/icons.svg#icon-person"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-field">
+            Телефон
+            <span class="modal-form-wrapper">
+              <input class="modal-form-input" type="tel" name="user-tel">
+              <svg class="modal-form-icon" width="18px" height="18px">
+                <use href="./img/icons.svg#icon-phone"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-field">
+            Почта
+            <span class="modal-form-wrapper">
+              <input class="modal-form-input" type="email" name="user-email">
+              <svg class="modal-form-icon" width="18px" height="18px">
+                <use href="./img/icons.svg#icon-email"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-field">
+            Комментарий
+            <textarea class="modal-form-message" name="user-message" placeholder="Введите текст"></textarea>
+          </label>
+          <input class="modal-form-checkbox visually-hidden" type="checkbox" id="policy">
+          <label class="modal-form-checkbox-label" for="policy">Соглашаюсь с рассылкой и принимаю&nbsp;
+          <a href="">Условия договора</a></label>
+          <button class="modal-form-btn" type="submit">
+            Отправить
+          </button>
+        </form>
       </div>
     </div>
     <script src="js/modal.js"></script>
